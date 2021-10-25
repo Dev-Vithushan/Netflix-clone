@@ -7,6 +7,11 @@
     <title>Netflix</title>
     <link rel="stylesheet" href="../CSS/index.css">
     <script src="../JS/index.js"></script>
+
+    <link rel="stylesheet" 
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"/>
     
 </head>
 <body>
@@ -18,23 +23,31 @@
                 <img 
                src="https://www.freepnglogos.com/uploads/netflix-logo-0.png"
                 alt="Netlfix"
-                class="brand-logo"
+                class="brand__logo"
                 />
             </div>
             <!-- creating the nav items -->
-            <div class="nav__items">
+            <div class="navbar__nav__items">
                 <!-- First navbar item -->
                 <div class="nav__item">
-                    <select 
-                    name="language" 
-                    id="language__selector" 
-                    class="language__drop__down">
+                    <!-- Making new div for the making language border -->
+                   <div class="dropdown__container">
+                        <i class="fas fa-globe"></i>
+                        <select 
+                        name="language" 
+                        id="language__selector" 
+                        class="language__drop__down">
 
-                        <option value="English" selected>English</option>
-                        <option value="Tamil">Tamil</option>
-                        
-                    </select>
-
+                            <option value="English" selected>English</option>
+                            <option value="Tamil">Tamil</option>
+                            
+                        </select>
+                   </div>
+                </div>
+                <div class="nav__item">
+                    <button class="signin__button">
+                        Sign in
+                    </button>
                 </div>
             </div>
 
